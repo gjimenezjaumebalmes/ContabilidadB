@@ -66,31 +66,6 @@ class Navbar extends React.Component{
             <NavbarToggler onClick={this.toggler} />
             <Collapse isOpen={navCollapsible} navbar>
               <Nav className="mr-auto" navbar>
-                {/*<NavItem>*/}
-                {/*  <Link className="nav-link text-success" to="/menu">Menu</Link>*/}
-                {/*</NavItem>*/}
-                {/*<NavItem>*/}
-                {/*<Link className="nav-link" to="/restaurant">Restaurant</Link>*/}
-                {/*</NavItem>*/}
-                {/*<NavItem>*/}
-                {/*<Link className="nav-link" to="/categories">Categories</Link>*/}
-                {/*</NavItem>*/}
-            {/*    <UncontrolledDropdown nav inNavbar>*/}
-            {/*  <DropdownToggle nav caret>*/}
-            {/*    Search By */}
-            {/*  </DropdownToggle>*/}
-            {/*  <DropdownMenu right>*/}
-            {/*    <DropdownItem>*/}
-            {/*    <Link className="nav-link" to="/searchbyname">Name</Link>*/}
-            {/*    </DropdownItem>*/}
-            {/*    <DropdownItem>*/}
-            {/*    <Link className="nav-link" to="/searchbyprice">Price</Link>*/}
-            {/*    </DropdownItem>*/}
-            {/*    <DropdownItem>*/}
-            {/*    <Link className="nav-link" to="/searchbyrating">Rating</Link>*/}
-            {/*    </DropdownItem>*/}
-            {/*  </DropdownMenu>*/}
-            {/*</UncontrolledDropdown>*/}
               </Nav>
                 <Nav color='#28A745' > 
                   <Link style = {{fontSize:'20px'}} className="nav-link fas fa-cart-arrow-down text-success" to={`/store/${this.state.id}`}></Link>

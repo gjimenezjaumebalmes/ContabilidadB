@@ -70,9 +70,7 @@ class Navbar extends React.Component{
                 <Nav color='#28A745' > 
                   <Link style = {{fontSize:'20px'}} className="nav-link fas fa-cart-arrow-down text-success" to={`/store/${this.state.id}`}></Link>
                 </Nav>
-                <div style = {{fontSize:'30px'}}>
-                |
-                </div>&nbsp; &nbsp;
+              &nbsp; &nbsp;
 
                 {!token?
                 <Nav Navbar>

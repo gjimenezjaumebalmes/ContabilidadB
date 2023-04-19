@@ -15,4 +15,8 @@ nvm use 14.17.0
 
 yarn add @babel/runtime
 
+yarn add pg
+
+yarn add pg-native
+
 

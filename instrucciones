@@ -4,9 +4,9 @@ nvm install 14.17.0
 
 nvm use 14.17.0
 
-yarn add react-scripts
-
 yarn install 
+
+yarn add react-scripts
 
 yarn upgrade @babel/runtime
 

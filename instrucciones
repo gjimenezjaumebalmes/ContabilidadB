@@ -1,13 +1,18 @@
-Instalar el aplicativo : nvm-setup.exe
-
-nvm install 14.17.0
-
-nvm use 14.17.0
+// Instalar el aplicativo : nvm-setup.exe
 
 yarn install 
 
 yarn add react-scripts
 
+yarn start
+
+
+// Iniciar con login funcional 2n paso : 
+
+nvm install 14.17.0
+
+nvm use 14.17.0
+
 yarn add @babel/runtime
 
-yarn start
+

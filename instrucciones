@@ -8,6 +8,6 @@ yarn install
 
 yarn add react-scripts
 
-yarn upgrade @babel/runtime
+yarn add @babel/runtime
 
 yarn start

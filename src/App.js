@@ -2,7 +2,9 @@ import React from 'react';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
-import Contact from './components/Contact'
+import Contact from './pages/contact'
+import Aboutus from './pages/aboutus'
+import Products from './pages/products'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Login from './pages/Login'
@@ -33,6 +35,12 @@ class App extends React.Component{
           </Route>
           <Route path='/Contact' exact>
             <Contact />
+          </Route>
+          <Route path='/Products' exact>
+            <Products />
+          </Route>
+          <Route path='/Aboutus' exact>
+            <Aboutus />
           </Route>
           <Route path='/login' exact>
             <Login/>

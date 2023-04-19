@@ -20,7 +20,7 @@ class Footer extends React.Component{
 
               <div className="col-md-2 mb-3" >
                 <h6 className="text-uppercase font-weight-bold" >
-                  <a href="/pages/aboutus.js" style={{color:'#28A745'}}>About us</a>
+                  <a href="/aboutus" style={{color:'#28A745'}}>About us</a>
                 </h6>
               </div>
 
@@ -28,14 +28,14 @@ class Footer extends React.Component{
 
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <a href="/pages/products.js" style={{color:'#28A745'}}>Products</a>
+                  <a href="/products" style={{color:'#28A745'}}>Products</a>
                 </h6>
               </div>
 
 
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <a href="/pages/contact.js" style={{color:'#28A745'}}>Contact</a>
+                  <a href="/contact" style={{color:'#28A745'}}>Contact</a>
                 </h6>
               </div>
 

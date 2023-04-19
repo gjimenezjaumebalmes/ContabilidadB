@@ -19,7 +19,7 @@ class  Home extends React.Component{
     const settings =  {
       autoplay: true,
       dots: true,
-      // duration: 100,
+      duration: 100,
       initialSlide: false,
       // infinite: true,
     };
@@ -44,6 +44,7 @@ class  Home extends React.Component{
               </div>
           </div>
       </div>
+
       <br/><br/>
         </Container>
 

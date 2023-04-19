@@ -1,99 +1,29 @@
-import React from 'react'
-import Axios from 'axios'
-import {registerUser} from '../redux/action/register'
-import {connect} from 'react-redux'
-import {APP_URL} from '../resources/config'
-import {Link} from 'react-router-dom'
-import { Container, Row, Col, Button, Label, Input, Form, FormGroup, Card } from 'reactstrap';
-import '../resources/style.css'
+import React from 'react';
+import { Container } from 'reactstrap';
+import Helmet from 'react-helmet';
 
-class Register extends React.Component{
-    constructor (props){
-        super(props)
+const AboutUsPage = () => {
+    return (
+        <Container>
+            <Helmet>
+                <title>Sobre nosotros - DurumEats</title>
+            </Helmet>
+            <div className="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                <div className="col-md-8 col-12 mt-5">
+                    <h1>Sobre Nosotros</h1>
+                    <p>Somos una plataforma web de delivery de kebabs que te permite disfrutar de la auténtica comida turca desde la comodidad de tu hogar.</p>
+                    <p>Con DurumEats, puedes personalizar tu kebab a tu gusto escogiendo los ingredientes que más te gusten desde nuestra página web fácil de usar. Desde la carne hasta las salsas, puedes seleccionar los ingredientes de tu elección y personalizar tu pedido como lo prefieras.</p>
+                    <p>Pero eso no es todo, con DurumEats, puedes elegir en qué restaurante de kebabs deseas que se prepare tu pedido. De esta manera, puedes estar seguro de que tu kebab será preparado fresco y a tu gusto en el restaurante que prefieras.</p>
+                    <p className="header-image-about center">
+                        <img  src={require('../images/Carousal 3.jpg')} alt="" />
+                    </p>
+                    <p>Como podrás ver, los kebabs turcos son una deliciosa opción para disfrutar en cualquier momento. En DurumEats, nos aseguramos de que nuestros clientes puedan personalizar su pedido para que obtengan una experiencia única y satisfactoria.</p>
+                    <p>Además, al permitirles elegir el restaurante en el que se preparará su comida, nuestros clientes pueden estar seguros de que su kebab será fresco y de la mejor calidad.</p>
+                    <p>No esperes más y prueba DurumEats para disfrutar de la auténtica comida turca desde la comodidad de tu hogar. ¡Te garantizamos que no te arrepentirás!</p>
+                </div>
+            </div>
+        </Container>
+    );
+};
 
-        this.onSubmit = this.onSubmit.bind(this);
-
-        this.state = {
-            name : "",
-            username : "",
-            password : "",
-        }
-    }
-
-
-    async onSubmit (event){
-        event.preventDefault();
-        const name = await this.state.name
-        const username = await this.state.username
-        const password = await this.state.password
-        await this.props.dispatch(registerUser({name, username, password}))
-        alert('Account Success Created!')
-        // console.log(this.state)
-        // const data = await Axios.post(APP_URL.concat('user/registuser'),this.state)
-        console.log(registerUser)
-        window.location = '/login'
-    }
-
-    render(){
-        return(
-            <Container>
-                <Row>
-                    <Card className='mt-3 col-md-6 offset-md-3 shadow'  style = {{backgroundColor: 'dark', height:"450px", width:"300px", borderRadius:'15px' }}>
-                        <Col >
-                            <Form>
-                                <h3 className="h5 text-center mt-3"><b>REGISTER</b></h3>
-                                <FormGroup>
-                                    <Label className="grey-text">Name </Label>
-                                    <Input
-                                        type="text"
-                                        placeholder ="Insert Your Name"
-                                        value={this.state.name} onChange={(e)=>this.setState({name:e.target.value})}
-                                    />
-                                </FormGroup>
-
-                                <FormGroup>
-                                    <Label className="grey-text">Username </Label>
-                                    <Input
-                                        type="text"
-                                        placeholder ="Insert Your Username"
-                                        value={this.state.username} onChange={(e)=>this.setState({username:e.target.value})}
-                                    />
-                                </FormGroup>
-
-
-                                <FormGroup>
-                                    <Label className="grey-text">Password </Label>
-                                    <Input
-                                        type="password"
-                                        placeholder ="Insert Your Password"
-                                        value={this.state.password} onChange={(e)=>this.setState({password:e.target.value})}
-                                    />
-                                </FormGroup>
-
-                                <FormGroup>
-                                    <Button onClick = {this.onSubmit} type='submit' className="btn btn-success btn-block" color = 'success' value = 'submit'>Submit</Button>
-                                </FormGroup>
-
-                                <p className="forgot-password text-right">
-                                    Already registered <Link to="/login" className="text-success">sign in?</Link>
-                                </p>
-                            </Form>
-                        </Col>
-                    </Card>
-                </Row>
-                <br/><br/><br/>
-                {this.state.show}
-            </Container>
-
-        )}
-
-
-
-}
-const mapStateToProps = state => {
-    return {
-        register: state.register
-    }
-}
-
-export default connect(mapStateToProps)(Register)
+export default AboutUsPage;

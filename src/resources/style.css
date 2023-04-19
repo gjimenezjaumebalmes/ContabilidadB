@@ -2,8 +2,6 @@ body {
     background-color: #F8F9FA;
 }
 
-
-
 .carousel-item img{
     box-sizing: border-box;
     width: 100%;
@@ -17,3 +15,36 @@ h1,h2,h3,h4,h5,h6,label,span {
     font-weight: 500;
     font-family: 'Fira Sans', sans-serif;
   }
+
+.btn-submit {
+    background-color: green;
+    color: white;
+}
+
+header-image-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header-image-about center {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; /* Tamaño fijo para las tarjetas */
+}
+
+.card-img-top {
+    height: 200px; /* Tamaño fijo para la imagen */
+    object-fit: cover;
+}

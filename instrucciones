@@ -17,6 +17,14 @@ yarn add @babel/runtime
 
 yarn add pg
 
+npm install -g node-gyp
+
+npm install libpq
+
 yarn add pg-native
+
+yarn add @babel/plugin-proposal-class-static-block
+
+
 
 

@@ -1,3 +1,9 @@
+Instalar el aplicativo : nvm-setup.exe
+
+nvm install 14.17.0
+
+nvm use 14.17.0
+
 yarn add react-scripts
 
 yarn install 

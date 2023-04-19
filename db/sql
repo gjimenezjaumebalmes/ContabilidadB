@@ -1,0 +1,10 @@
+CREATE TABLE clients (
+  id SERIAL PRIMARY KEY,
+  Name VARCHAR(255),
+  Username VARCHAR(255),
+  Password VARCHAR(255)
+);
+
+
+INSERT INTO clients (Name, Username, Password) 
+VALUES ('test', 'testuser', 'testpassword');

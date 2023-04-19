@@ -25,6 +25,7 @@ yarn add pg-native
 
 yarn add @babel/plugin-proposal-class-static-block
 
+npm install pg-native --force
 
 
 

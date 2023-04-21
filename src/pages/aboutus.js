@@ -9,8 +9,7 @@ const AboutUsPage = () => {
                 <title>Sobre nosotros - DurumEats</title>
             </Helmet>
             <div className="row d-flex text-center justify-content-center mb-md-0 mb-4">
-                <div className="col-md-8 col-12 mt-5">
-                    <h1>Sobre Nosotros</h1>
+                <div className="col-md-8 col-12 mt-5"><h1 >Sobre Nosotros</h1>
                     <p>Somos una plataforma web de delivery de kebabs que te permite disfrutar de la auténtica comida turca desde la comodidad de tu hogar.</p>
                     <p>Con DurumEats, puedes personalizar tu kebab a tu gusto escogiendo los ingredientes que más te gusten desde nuestra página web fácil de usar. Desde la carne hasta las salsas, puedes seleccionar los ingredientes de tu elección y personalizar tu pedido como lo prefieras.</p>
                     <p>Pero eso no es todo, con DurumEats, puedes elegir en qué restaurante de kebabs deseas que se prepare tu pedido. De esta manera, puedes estar seguro de que tu kebab será preparado fresco y a tu gusto en el restaurante que prefieras.</p>

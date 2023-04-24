@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import Helmet from 'react-helmet';
-// Commit main
+// Commit main2
 const AboutUsPage = () => {
     return (
         <Container>
